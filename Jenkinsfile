@@ -1,5 +1,11 @@
 pipeline {
   agent any //{label 'linux'}
+   
+  //trigger for every 15 minutes
+  triggers { 
+    cron('H/15 0 * * *') 
+  }
+
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
