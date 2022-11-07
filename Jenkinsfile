@@ -17,4 +17,10 @@ pipeline {
       }
     }
   }
+
+  post{
+    always{
+      echo "this should show up always no matter what."
+    }
+  }
 }
