@@ -3,7 +3,7 @@ pipeline {
    
   //trigger for every 1 minute
   triggers { 
-    cron('H/1 0 * * *') 
+    cron('* * * * *') 
   }
 
   options {
