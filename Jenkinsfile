@@ -1,9 +1,9 @@
 pipeline {
   agent any //{label 'linux'}
    
-  //trigger for every 1 minute
+  //trigger for mid night every day
   triggers { 
-    cron('* * * * *') 
+    cron('0 0 * * *') 
   }
 
   options {
